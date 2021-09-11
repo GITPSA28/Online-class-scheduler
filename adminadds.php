@@ -44,13 +44,13 @@ try {
     $mail->isSMTP();                                   
     $mail->Host = 'smtp.gmail.com';                  //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                 
-    $mail->Username   = 'psamailtest123@gmail.com';                     //SMTP username
-    $mail->Password   = 'mailtest123';                               //SMTP password
+    $mail->Username   = 'Your@mail.id';                     //SMTP username 
+    $mail->Password   = 'Y0urPassw0rd';                               //SMTP password
     $mail->SMTPSecure = "tls";            
     $mail->Port       = 587;                                   
 
     //Recipients
-    $mail->setFrom('psatest@gmail.com', 'sunilaravind');  
+    $mail->setFrom('Your@mail.id', 'YourName');  
     
     $sqlmail="SELECT email,name FROM students";
     $result = mysqli_query($link, $sqlmail);  
